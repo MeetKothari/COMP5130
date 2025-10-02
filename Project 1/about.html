@@ -1,18 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <h1>About me:</h1>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>About</title>
 </head>
 <body>
-    <div class="container">
-    <p> My name's Meet. I'm very passionate about writing, reading, and technology. This website is going to serve as an intersection of all those things. As someone who works in tech and goes to school for it, I find myself aware of the misnomer that those of us who code or work with numbers can't enjoy literature, or the arts on a broader scale.</p>
-    <img src="https://static01.nyt.com/images/2022/10/31/opinion/30paul1/30paul1-superJumbo.jpg?quality=75&auto=webp" alt = "Dark Academia background" height="600px" width="800px">
+  <div class="navbar">
+    <nav>
+      <ul id="first-nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="reading.html">Recommendations</a></li>
+        <li>
+          <label class="rotate-wrapper">
+            <input type="checkbox" id="rotate-toggle">
+            <i class="fa fa-adjust rotate-icon" aria-hidden="true"></i>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li>
+        <a href="https://github.com/MeetKothari" target="_blank">
+          <i id="sidebar_list" class="fa fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/meetnkothari/" target="_blank">
+          <i id="sidebar_list" class="fa fa-linkedin-square"></i>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:meetnkothari13@gmail.com">
+          <i id="sidebar_list" class="fa fa-envelope"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="line"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="panel-row">
+        <section class="panel"> 
+            <p class="paneltext">
+              I have a few different methods of preferred communication; here's a little compendium 
+              of all my social accounts, including my SubStack.
+            </p>
+          </section>
+        <section class="panelthin">
+            <p class="paneltext">
+              <i class="fa fa-binoculars" aria-hidden="true"></i>
+            </p>
+        </section>
+        <section class="panel">
+          <h1 class="h-rule">About Me</h1>
+          <p class="paneltext">
+            My name's Meet. I'm very passionate about writing, reading, and technology.
+            This website is going to serve as an intersection of all those things. As
+            someone who works in tech and goes to school for it, I find myself aware
+            of the misnomer that those of us who code or work with numbers can't enjoy
+            literature, or the arts on a broader scale.
+          </p>
+        </section>
+      </div>
+      <section class="panelthin" id="randomicon">
+        <p class="paneltext">
+            <i class="fa fa-superpowers" aria-hidden="true"></i>
+        </p>
+    </section>
+    <svg class="twirly-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+        <path d="M180 20
+                 C 120 40, 120 80, 40 60
+                 Q 20 55, 20 80"
+              fill="none"
+              stroke="#DDC3C3"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+      </svg>
+    <div class="logo-wrapper">
+        <img src="https://www.consulting.us/profile/media/cgi-spotlight-2024-04-08-113801292.png" alt="CGI Logo" class="logo-img">
     </div>
+    <section class="panel" id="CGI">
+        <p class="paneltext">
+              I've worked in a lot of different areas. Currently, I work as a Consultant @ CGI, where I help align our clients needs with our technical capabilites.
+            </p>
+    </section>
+    <img src="https://static01.nyt.com/images/2022/10/31/opinion/30paul1/30paul1-superJumbo.jpg?quality=75&auto=webp"
+         alt="Dark Academia background"
+         height="600"
+         width="800">
+  </div>
 </body>
-<footer> 
-    <a href="index.html">Home</a>
-</footer>
 </html>
