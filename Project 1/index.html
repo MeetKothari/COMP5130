@@ -3,20 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "/styles/styles.css">
+    <link rel = "stylesheet" href = "./styles/styles.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>M1</title>
-    <h1>Meet's Website</h1>
+    <div class="welcome">
+        W<span class="script">E</span>L<span class="script">C</span>O<span class="script">M</span>E
+        <span class="scribble-exclaim">!</span>
+        <span class="scribble-exclaim">!</span>
+    </div>
 </head>
 <body>
     <div class = "page">
-        <ul id = "first-nav-bar">
-            <li class = "first-nav-bar-bullets"><a href = "about.html">About</a></li>
-            <li class = "first-nav-bar-bullets"><a href = "contact.html">Contact</a></li>
-            <li class = "first-nav-bar-bullets"><a href = "reading.html">Recommendations</a></li>
-        </ul>
-        <p> Welcome to my website! This website is going to serve as a hub for all things related to me and my work.</p>
+        <p class="intro"> There's a
+            <span class="circle"> LOT</span> 
+            going on right now.
+        </p>
+         <div class="navbar">
+            <nav>
+            <ul id="first-nav-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reading.html">Recommendations</a></li>
+                <li>
+                <label class="rotate-wrapper">
+                    <input type="checkbox" id="rotate-toggle">
+                    <i class="fa fa-adjust rotate-icon" aria-hidden="true"></i>
+                </label>
+                </li>
+            </ul>
+            </nav>
+        </div>
+        <!-- READING -->
+        <section class="articles">
+            <h2 class="intro">
+            I'm currently <span class="circle">reading</span> <span class="scribble-underline">this stuff:</span>
+            </h2>
+        
+            <div class="article-grid">
+            <div class="article-card">
+                <img src="https://cdn.theatlantic.com/thumbor/qLkRmNo-OZm1YKMvYdELgDxXW2k=/0x163:2941x1817/960x540/media/img/mt/2015/01/RTR4K1QR/original.jpg" alt="Lions game tackle">
+                <h3><a href="https://substack.com/inbox/post/163373641">Everyone's Playing Zone All of a Sudden</a></h3>
+            </div>
+        
+            <div class="article-card">
+                <img src="https://screenshot-media.com/wp-content/uploads/2021/01/SCREENSHOT-media-What-is-dark-academia-Here-s-a-mini-style-guide-into-the-brooding-subculture-cottonbro-full-image.jpg" alt="Dark academia portrait">
+                <h3><a href="https://substack.com/inbox/post/164254562">Happiness Seems Farther Away Than Ever</a></h3>
+            </div>
+        
+            <div class="article-card">
+                <img src="https://www.panaprium.com/cdn/shop/articles/art_academia_outfit_8cc5dce2-f902-4773-b68b-912dae228510.jpg?v=1681930941" alt="Artist in studio">
+                <h3><a href="https://substack.com/inbox/post/163731668">Only Do One Thing At a Time</a></h3>
+            </div>
+            </div>
+        </section>
+        
+        <!-- WATCHING -->
+        <section class="articles">
+            <h2 class="intro">
+            I'm currently <span class="scribble-underline">watching</span> all <span class="scribble-underline">this stuff:</span>
+            </h2>
+        
+            <div class="article-grid">
+            <div class="article-card">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/0*xj2KGuxgtnpASQjU" alt="Lions game tackle">
+                <h3><a href="https://www.youtube.com/watch?v=6Ke2vQsjh8I&list=PL5BHvkmIyETFSluGeDgsxy6mL7wDO5tcd&index=3">How You Play Games Is How You Do Everything In Life</a></h3>
+            </div>
+        
+            <div class="article-card">
+                <img src="https://i.pinimg.com/736x/ab/d6/d4/abd6d4679a52ae5667e4546dd3601336.jpg" alt="Dark academia portrait">
+                <h3><a href="https://www.youtube.com/watch?v=8zJlKmgMT44">Why Gaming Feels Hard After A Long Day (And How To Fix It)</a></h3>
+            </div>
+        
+            <div class="article-card">
+                <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/05/gandalf-and-balrog-lord-of-the-rings.jpg" alt="Artist in studio">
+                <h3><a href="https://www.youtube.com/watch?v=sKGhjCsOM70">When The Character Is So Boring, They Actually Become Fascinating</a></h3>
+            </div>
+            </div>
+        </section>
     </div>
-
-    <div class="stories"> Here, you can find some stories related to my interests. This div will contain some sort of API or web scraper that will populate SubStack articles.</div>
 </body>
 </html>
